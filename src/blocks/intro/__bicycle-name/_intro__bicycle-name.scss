@@ -1,0 +1,5 @@
+@use '../../mixins/set-font' as *;
+
+.intro__bicycle-name{
+  @include set-font(400, 18px, 1);
+}

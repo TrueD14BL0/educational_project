@@ -1,0 +1,19 @@
+@use '../../variables/variables' as *;
+
+.switcher__btn{
+  font-family: 'Glyphter';
+  font-size: 18px;
+  color: #24B47E;
+  width: 44px;
+  height: 24px;
+  padding: 2px 0 2px 2px;
+  box-sizing: border-box;
+  border-radius: 12px;
+  background-color: $white;
+  cursor: pointer;
+  transition: background-color .5s $animationType, padding .5s $animationType;
+
+  &:before{
+    content:'\0041';
+  }
+}

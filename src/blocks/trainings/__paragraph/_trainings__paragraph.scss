@@ -1,0 +1,8 @@
+.trainings__paragraph{
+  min-height: 272px;
+  grid-area: par;
+
+  @media all and (max-width: 600px) {
+    min-height: 0;
+  }
+}

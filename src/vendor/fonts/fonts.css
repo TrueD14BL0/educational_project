@@ -1,0 +1,47 @@
+@font-face {
+  font-family: 'Inter';
+  font-style:  normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../vendor/fonts/Inter-Regular.woff2?v=3.19") format("woff2"),
+       url("../vendor/fonts/Inter-Regular.woff?v=3.19") format("woff");
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-style:  normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("../vendor/fonts/Inter-Medium.woff2?v=3.19") format("woff2"),
+       url("../vendor/fonts/Inter-Medium.woff?v=3.19") format("woff");
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-style:  normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url("../vendor/fonts/Inter-Black.woff2?v=3.19") format("woff2"),
+       url("../vendor/fonts/Inter-Black.woff?v=3.19") format("woff");
+}
+
+@font-face {
+    font-family: 'Glyphter';
+    src: url('../vendor/fonts/Glyphter.eot');
+    src: url('../vendor/fonts/Glyphter.eot?#iefix') format('embedded-opentype'),
+         url('../vendor/fonts/Glyphter.woff') format('woff'),
+         url('../vendor/fonts/Glyphter.ttf') format('truetype'),
+         url('../vendor/fonts/Glyphter.svg#Glyphter') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class*='icon-']:before{
+	display: inline-block;
+   font-family: 'Glyphter';
+   font-style: normal;
+   font-weight: normal;
+   line-height: 1;
+   -webkit-font-smoothing: antialiased;
+   -moz-osx-font-smoothing: grayscale
+}

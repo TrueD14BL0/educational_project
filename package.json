@@ -1,0 +1,8 @@
+{
+  "devDependencies": {
+    "sass": "^1.55.0"
+  },
+  "scripts": {
+  	"build": "sass ./src/pages/index.scss ./dist/pages/index.css --load-path ./src/blocks"
+  }
+}

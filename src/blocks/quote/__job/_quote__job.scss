@@ -1,0 +1,16 @@
+@use '../../mixins/set-font' as *;
+@use '../../mixins/set-standart-transition' as *;
+
+.quote__job{
+  margin: 0;
+  grid-area: job;
+  @include set-font(400, 16px, 1.75);
+  opacity: .7;
+  @include set-standart-transition(color);
+
+  @media all and (max-width: 600px) {
+    margin-top: -36px;
+    font-size: 10px;
+    line-height: 1.6;
+  }
+}

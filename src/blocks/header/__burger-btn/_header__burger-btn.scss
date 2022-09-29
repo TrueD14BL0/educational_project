@@ -1,0 +1,19 @@
+.header__burger-btn{
+  display: none;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: transparent;
+
+  @media all and (max-width: 600px){
+    display: block;
+    width: 22px;
+    height: 22px;
+    background-image: url('../images/burger.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+
+

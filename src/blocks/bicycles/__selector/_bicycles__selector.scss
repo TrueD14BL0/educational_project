@@ -1,0 +1,27 @@
+@use '../../variables/variables' as *;
+
+.bicycles__selector{
+  display: none;
+  grid-area: menu;
+  border-radius: 2px;
+  font-weight: 600;
+  color: $baseFontColor;
+  opacity: 1;
+  border: 1px solid #E3E3E3;
+  background-color: $baseBack;
+  cursor: pointer;
+  transition: background-color .5s $animationType, color .5s $animationType;
+
+  @media all and (max-width: 700px) {
+    display: block;
+    max-height: 30px;
+    align-self: center;
+  }
+
+  @media all and (max-width: 600px) {
+    max-width: 114px;
+    box-sizing: border-box;
+  }
+}
+
+

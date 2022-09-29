@@ -1,0 +1,9 @@
+.bicycles__title{
+  grid-area: title;
+  align-self: baseline;
+
+  @media all and (max-width: 600px) {
+    margin: 40px 0 20px;
+  }
+}
+

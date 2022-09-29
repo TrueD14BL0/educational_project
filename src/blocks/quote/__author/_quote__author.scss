@@ -1,0 +1,12 @@
+@use '../../mixins/set-font' as *;
+
+.quote__author{
+  margin: 0;
+  grid-area: author;
+  @include set-font(500, 20px, 1.6);
+
+  @media all and (max-width: 600px) {
+    font-size: 14px;
+    line-height: 1.57;
+  }
+}

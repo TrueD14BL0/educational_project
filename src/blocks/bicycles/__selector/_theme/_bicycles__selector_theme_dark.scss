@@ -1,0 +1,7 @@
+@use '../../../variables/variables' as *;
+
+.bicycles__selector_theme_dark{
+  color: $white;
+  opacity: 0.65;
+  background-color: $darkThemeBack;
+}

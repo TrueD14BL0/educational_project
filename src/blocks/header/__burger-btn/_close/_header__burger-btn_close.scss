@@ -1,0 +1,9 @@
+@media all and (max-width: 600px){
+  .header__burger-btn_close{
+    background-image: url('../images/cross.svg');
+  }
+
+  .header__burger-btn_close.header__burger-btn_theme_dark{
+    background-image: url('../images/cross_dark.svg');
+  }
+}

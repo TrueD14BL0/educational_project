@@ -1,0 +1,44 @@
+@use '../mixins/set-standart-transition' as *;
+
+.bicycles{
+  position: relative;
+  padding: 60px 120px;
+  display: grid;
+  grid-template-areas:
+    "title menu"
+    "bic bic";
+  grid-template-columns: repeat(2, minmax(max-content,1fr));
+  grid-template-rows: max-content;
+  row-gap: 120px;
+  box-sizing: border-box;
+  @include set-standart-transition(transform);
+
+  &::before{
+    @media all and (max-width: 600px) {
+      content: '';
+      position: absolute;
+      width: calc(100% - 36px);;
+      height: 1px;
+      top:40px;
+      left: 18px;
+      background-color:  #e3e3e3;
+    }
+  }
+
+  @media all and (max-width: 991px) {
+    padding: 40px 18px;
+  }
+
+  @media all and (max-width: 600px) {
+    display: grid;
+    position: relative;
+    padding: 40px 18px;
+    grid-template-areas:
+    "title"
+    "menu"
+    "bic"
+    "indicator";
+    grid-template-columns: 1fr;
+    row-gap: 20px;
+  }
+}

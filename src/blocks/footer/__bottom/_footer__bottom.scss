@@ -1,0 +1,11 @@
+.footer__bottom{
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+
+  @media all and (max-width: 600px) {
+    align-items: center;
+  }
+}
+

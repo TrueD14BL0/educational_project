@@ -1,0 +1,5 @@
+@use '../variables/variables' as *;
+
+@mixin set-standart-transition($object, $time: $animationTime){
+  transition: $object $time $animationType;
+}

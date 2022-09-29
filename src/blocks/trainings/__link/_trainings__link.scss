@@ -1,0 +1,20 @@
+@use '../../mixins/set-font' as *;
+@use '../../mixins/set-transition-color-opacity' as *;
+@use '../../variables/variables' as *;
+
+.trainings__link{
+  text-decoration: none;
+  @include set-font(600, 18px, 1.56);
+  color: $baseFontColor;
+  @include set-transition-color-opacity();
+
+  @media all and (max-width: 600px) {
+    font-size: 14px;
+    line-height: 1.43;
+  }
+
+  &:hover{
+    opacity: .75;
+    cursor: pointer;
+  }
+}

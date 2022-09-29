@@ -1,0 +1,8 @@
+@use '../../variables/variables' as *;
+
+.mobile-popup_opened{
+  display: flex;
+  min-height: calc(100% - 74px);
+  transition: background-color .5s $animationType, color .5s $animationType, visibility .25s $animationType;
+  visibility: visible;
+}

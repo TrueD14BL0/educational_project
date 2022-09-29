@@ -1,0 +1,14 @@
+.footer__gear{
+  display: none;
+  background-image: url('../images/gear.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+
+  @media all and (max-width: 600px) {
+    width: 38px;
+    height: 38px;
+    display: block;
+  }
+}
+
+

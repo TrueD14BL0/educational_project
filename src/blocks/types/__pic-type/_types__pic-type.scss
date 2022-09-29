@@ -1,0 +1,17 @@
+.types__pic-type{
+  margin-bottom: 16px;
+  grid-area: left;
+  box-sizing: border-box;
+  min-width: 100px;
+  min-height: 40px;
+  justify-self:left;
+  align-self: end;
+  background-image: url('../images/highway.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @media all and (max-width: 600px) {
+    min-width: 70px;
+    min-height: 28px;
+  }
+}

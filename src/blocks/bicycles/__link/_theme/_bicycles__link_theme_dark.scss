@@ -1,0 +1,14 @@
+@use '../../../variables/variables' as *;
+
+.bicycles__link_theme_dark{
+  color: $lightGrey;
+
+  &:hover{
+    opacity: 0.5;
+  }
+
+  &.bicycles__link_active:hover{
+    color: $white;
+    opacity: 0.65;
+  }
+}

@@ -1,0 +1,12 @@
+@use '../mixins/set-standart-transition' as *;
+
+.footer{
+  padding: 80px 120px 60px;
+  flex: 0 0 auto;
+  background-color: #efefef;
+  @include set-standart-transition(background-color);
+
+  @media all and (max-width: 600px) {
+    padding: 60px 18px 16px;
+  }
+}

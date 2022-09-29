@@ -1,0 +1,16 @@
+@use '../mixins/set-font' as *;
+@use '../mixins/set-standart-transition' as *;
+@use '../variables/variables' as *;
+
+.section-paragraph{
+  margin: 0;
+  @include set-font(400, 18px, 1.56);
+  color: $nearDark;
+  opacity: .7;
+  @include set-standart-transition(color);
+
+  @media all and (max-width: 600px) {
+    font-size: 12px;
+    line-height: 1.5;
+  }
+}

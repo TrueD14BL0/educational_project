@@ -1,0 +1,7 @@
+.switcher_position_header{
+  display: none;
+
+  @media all and (max-width: 600px) {
+    display: flex;
+  }
+}

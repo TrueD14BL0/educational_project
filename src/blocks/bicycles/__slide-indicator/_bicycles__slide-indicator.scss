@@ -1,0 +1,11 @@
+.bicycles__slide-indicator{
+  display: none;
+  grid-area: indicator;
+  justify-self: center;
+  gap: 5px;
+
+  @media all and (max-width: 600px) {
+    display: flex;
+  }
+}
+

@@ -1,0 +1,18 @@
+@use '../../variables/variables' as *;
+
+.card_position_intro{
+  position: sticky;
+  top: 347px;
+  width: 440px;
+  height: 300px;
+  box-sizing: border-box;
+  box-shadow: -20px 60px 220px rgba(0, 0, 0, 0.44);
+  background-color: $baseBack;
+
+  @media all and (max-width: 785px) {
+    position: static;
+    width: 234px;
+    height: 160px;
+    box-shadow: -20px 60px 220px rgba(0, 0, 0, 0.2);
+  }
+}

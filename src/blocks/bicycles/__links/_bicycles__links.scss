@@ -1,0 +1,26 @@
+@use '../../mixins/set-font' as *;
+
+.bicycles__links{
+  margin: 0;
+  padding: 0;
+  grid-area: menu;
+  display: flex;
+  gap: 40px;
+  list-style: none;
+  align-self: baseline;
+  justify-self: end;
+  @include set-font(400, 18px, 28px);
+  box-sizing: border-box;
+
+  @media all and (max-width: 991px) {
+    padding-right: 18px;
+  }
+
+  @media all and (max-width: 700px) {
+    display: none;
+  }
+}
+
+
+
+

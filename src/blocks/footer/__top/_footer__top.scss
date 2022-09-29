@@ -1,0 +1,10 @@
+.footer__top{
+  max-width: 360px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+
+  @media all and (max-width: 600px) {
+    gap: 40px;
+  }
+}

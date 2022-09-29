@@ -1,0 +1,45 @@
+@use '../mixins/set-standart-transition' as *;
+
+.types{
+  position: relative;
+  padding: 60px 0 60px 120px;
+  box-sizing: border-box;
+  display: grid;
+  grid-template-areas:
+    "title . ."
+    "descr . ."
+    "left left right"
+    "button . .";
+  grid-template-columns: 460px minmax(0, 150px) minmax(47.7%, 630px);
+  column-gap: 40px;
+  row-gap: 50px;
+  overflow: hidden;
+  @include set-standart-transition(transform);
+
+  @media all and (max-width: 991px) {
+    padding: 60px 18px;
+  }
+
+  @media all and (max-width: 600px) {
+    position: relative;
+    padding: 80px 18px 40px;
+    grid-template-areas:
+    "title button"
+    "left left"
+    "descr descr";
+    grid-template-columns: 1fr 1fr;
+    row-gap: 40px;
+  }
+
+  &::before{
+    @media all and (max-width: 600px) {
+      content: '';
+      position: absolute;
+      width: calc(100% - 36px);
+      height: 1px;
+      top:40px;
+      left: 18px;
+      background-color:  #e3e3e3;
+    }
+  }
+}

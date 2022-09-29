@@ -1,0 +1,22 @@
+@use '../../../variables/variables' as *;
+
+.form-description__input-email_theme_dark{
+  border: 1px solid rgba(125, 125, 125, 0.5);
+  color: $white;
+
+  &::-webkit-input-placeholder {
+    opacity: .5;
+  }
+
+  &::-moz-placeholder {
+    opacity: .5;
+  }
+
+  &::-ms-input-placeholder {
+    opacity: .5;
+  }
+
+  &::placeholder {
+    opacity: .5;
+  }
+}

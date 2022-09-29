@@ -1,0 +1,13 @@
+.page__content{
+  margin: auto;
+  min-height: 100vh;
+  max-width: 1440px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  @media all and (max-width: 600px) {
+    padding-top: 74px;
+    min-width: 320px;
+  }
+}

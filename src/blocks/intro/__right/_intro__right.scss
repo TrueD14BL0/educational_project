@@ -1,0 +1,16 @@
+.intro__right{
+  grid-area: right;
+  padding-bottom: 79px;
+  background-image: url('../images/intro.jpg');
+  background-position: right 20px;
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  @media all and (max-width: 785px) {
+    margin: auto;
+    min-height: 348px;
+    padding: 151px 50px 0 0;
+    background-position: 30px top;
+    box-sizing: border-box;
+  }
+}

@@ -1,0 +1,15 @@
+@use '../../mixins/set-font' as *;
+@use '../../mixins/set-transition-color-opacity' as *;
+@use '../../variables/variables' as *;
+
+.bicycles__link{
+  @include set-font(400, 18px, 28px);
+  cursor: pointer;
+  color: $nearDark;
+  opacity: .7;
+  @include set-transition-color-opacity();
+
+  &:hover{
+    opacity: 0.6;
+  }
+}

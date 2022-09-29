@@ -1,0 +1,42 @@
+.trainings{
+  position: relative;
+  padding: 150px 120px 120px;
+  display: grid;
+  grid-template-areas:
+    "title img"
+    "par img"
+    ". img"
+    "links img";
+  grid-template-columns: minmax(min-content, 38.3%) auto;
+  grid-template-rows: max-content minmax(225px, 1fr) max-content max-content;
+  row-gap: 50px;
+  column-gap: 160px;
+
+  @media all and (max-width: 991px) {
+    padding: 80px 18px 60px;
+    column-gap: 40px;
+  }
+
+  @media all and (max-width: 600px) {
+    position: relative;
+    grid-template-areas:
+    "title"
+    "img"
+    "par"
+    "links";
+    row-gap: 40px;
+    grid-template-columns: 1fr;
+  }
+
+  &::before{
+    @media all and (max-width: 600px) {
+      content: '';
+      position: absolute;
+      width: calc(100% - 36px);;
+      height: 1px;
+      top:40px;
+      left: 18px;
+      background-color:  #e3e3e3;
+    }
+  }
+}

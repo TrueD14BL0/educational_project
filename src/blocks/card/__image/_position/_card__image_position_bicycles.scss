@@ -1,0 +1,9 @@
+.card__image_position_bicycles{
+  box-shadow: 0px 20px 140px rgba(0, 0, 0, 0.06);
+
+  @media all and (max-width: 600px) {
+    padding-bottom: 40px;
+    box-shadow:none;
+  }
+}
+

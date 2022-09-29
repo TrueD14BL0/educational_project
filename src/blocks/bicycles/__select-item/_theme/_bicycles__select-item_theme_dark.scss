@@ -1,0 +1,10 @@
+@use '../../../variables/variables' as *;
+
+.bicycles__select-item_theme_dark{
+  color: $lightGrey;
+
+  &:checked{
+    color: $white;
+    opacity: 0.65;
+  }
+}

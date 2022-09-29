@@ -1,0 +1,16 @@
+@use '../../mixins/set-font' as *;
+@use '../../mixins/set-transition-color-opacity' as *;
+@use '../../variables/variables' as *;
+
+.bicycles__select-item{
+  @include set-font(400, 18px, 28px);
+  color: $nearDark;
+  opacity: .7;
+  @include set-transition-color-opacity();
+
+  &:checked{
+    font-weight: 600;
+    color: $baseFontColor;
+    opacity: 1;
+  }
+}
