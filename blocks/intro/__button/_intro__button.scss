@@ -2,6 +2,9 @@
 @use '../../variables/variables' as *;
 
 .intro__button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
   max-width: 180px;
   min-height: 50px;
   box-sizing: border-box;
@@ -12,6 +15,7 @@
   color: $white;
   @include set-font(600, 14px, 1.29);
   letter-spacing: 1px;
+  text-decoration: none;
 
   &:hover{
     cursor: pointer;
@@ -20,5 +24,7 @@
 
   @media all and (max-width: 785px) {
     max-width:100%;
+    font-size: 13px;
+    line-height: 1.46;
   }
 }

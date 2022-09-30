@@ -7,6 +7,7 @@ const copyright = document.querySelector('.footer__copyright');
 const paragraphs = ()=>document.querySelectorAll('.section-paragraph');
 const headerLinks = ()=>document.querySelectorAll('.header__link');
 const bicyclesLinks = ()=>document.querySelectorAll('.bicycles__link');
+const bicyclesCardsContainers = ()=>document.querySelectorAll('.bicycles__cards');
 const trainingLinks = document.querySelectorAll('.trainings__link');
 const btnsTypes = ()=>document.querySelectorAll('.types__btn');
 const introLine = document.querySelector('.intro__line');
@@ -67,6 +68,12 @@ function setIndicator(parent, index) {
   indicators[index].classList.toggle('bicycles__slide-indicator-element_active');
 }
 
+function moveBikesToIndex(childArr, newIndex){
+  Array.from(childArr).forEach(element => {
+    element.style.transform = `translateX(calc((100% + 18px) * -${newIndex}))`;
+  });
+}
+
 function startMovingBikes(curPosX, elem){
   startSlider = false;
   const childArr = elem.parentNode.children;
@@ -83,9 +90,7 @@ function startMovingBikes(curPosX, elem){
     vector = 1;
   }
   setIndicator(elem.parentNode, curIndex - vector);
-  Array.from(childArr).forEach(element => {
-    element.style.transform = `translateX(calc((100% + 18px) * -${curIndex - vector}))`;
-  });
+  moveBikesToIndex(childArr, curIndex - vector);
 }
 
 function moveBikeSlider(ev, elem){
@@ -129,6 +134,7 @@ function fillBicyclesSection(sectionBicycles, curBicycles){
   const bicyclesCardsContainer = sectionBicycles.querySelector('.bicycles__cards');
   const bicyclesLinks = sectionBicycles.querySelectorAll('.bicycles__link');
   const selectorLinks = sectionBicycles.querySelectorAll('.bicycles__select-item');
+  const indicatorLinks = sectionBicycles.querySelectorAll('.bicycles__slide-indicator-element');
   const selector = sectionBicycles.querySelector('.bicycles__selector');
   for (let index = 0; index < bicyclesLinks.length; index++) {
     const element = bicyclesLinks[index];
@@ -156,6 +162,13 @@ function fillBicyclesSection(sectionBicycles, curBicycles){
   curBicycles.forEach(element => {
     bicyclesCardsContainer.append(createCard(element, bicyclesCardsContainer));
   });
+  for (let index = 0; index < indicatorLinks.length; index++) {
+    const element = indicatorLinks[index];
+    element.addEventListener('click', ()=>{
+      moveBikesToIndex(bicyclesCardsContainer.children, index);
+      setIndicator(sectionBicycles, index);
+    });
+  }
   setIndicator(sectionBicycles, 0);
 }
 
@@ -340,6 +353,16 @@ function initPopupMenu() {
   });
 }
 
+function resetSliders(){
+  if(window.innerWidth<601){
+    return
+  }
+  bicyclesCardsContainers().forEach(element => {
+    moveBikesToIndex(element.children, 0);
+    setIndicator(element.closest('.bicycles'), 0);
+  });
+}
+
 function init(){
   formInput.addEventListener('focus', ()=>setVisibleFormButton(true));
   formInput.addEventListener('blur', ()=>setVisibleFormButton(false));
@@ -349,6 +372,7 @@ function init(){
   initStack();
   initPopupMenu();
   burger.addEventListener('click',toggleMenu);
+  window.addEventListener('resize', resetSliders);
 }
 
 init();

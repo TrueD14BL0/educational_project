@@ -357,6 +357,7 @@ template {
 
 .page__content {
   margin: auto;
+  padding-top: 74px;
   min-height: 100vh;
   max-width: 1440px;
   display: flex;
@@ -365,7 +366,6 @@ template {
 }
 @media all and (max-width: 600px) {
   .page__content {
-    padding-top: 74px;
     min-width: 320px;
   }
 }
@@ -486,7 +486,6 @@ template {
 }
 @media all and (max-width: 600px) {
   .intro {
-    padding: 40px 18px;
     grid-template-areas: "title" "right" "descr" "button";
     grid-template-columns: 1fr;
     gap: 40px;
@@ -513,6 +512,9 @@ template {
 }
 
 .intro__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   max-width: 180px;
   min-height: 50px;
   box-sizing: border-box;
@@ -525,6 +527,7 @@ template {
   font-size: 14px;
   line-height: 1.29;
   letter-spacing: 1px;
+  text-decoration: none;
 }
 .intro__button:hover {
   cursor: pointer;
@@ -533,6 +536,8 @@ template {
 @media all and (max-width: 785px) {
   .intro__button {
     max-width: 100%;
+    font-size: 13px;
+    line-height: 1.46;
   }
 }
 
@@ -1114,8 +1119,11 @@ template {
 }
 
 .bicycles__slide-indicator-element {
+  margin: 0;
+  padding: 0;
   width: 4px;
   height: 4px;
+  border: 0;
   background-color: #cacaca;
   box-sizing: content-box;
   border-radius: 2px;

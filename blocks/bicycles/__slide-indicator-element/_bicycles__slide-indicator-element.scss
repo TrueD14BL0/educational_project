@@ -1,8 +1,11 @@
 @use '../../mixins/set-standart-transition' as *;
 
 .bicycles__slide-indicator-element{
+  margin: 0;
+  padding: 0;
   width: 4px;
   height: 4px;
+  border: 0;
   background-color: #cacaca;
   box-sizing: content-box;
   border-radius: 2px;
