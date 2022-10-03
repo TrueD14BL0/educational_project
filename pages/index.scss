@@ -1,0 +1,129 @@
+@use '../vendor/fonts/fonts.css';
+@use '../vendor/normalize.css';
+
+@use '../blocks/page/page.scss';
+@use '../blocks/page/__content/page__content.scss';
+@use '../blocks/page/_theme/page_theme_dark.scss';
+
+@use '../blocks/section-title/section-title.scss';
+
+@use '../blocks/section-paragraph/section-paragraph.scss';
+@use '../blocks/section-paragraph/_theme/section-paragraph_theme_dark.scss';
+
+@use '../blocks/header/header.scss';
+@use '../blocks/header/_theme/header_theme_dark.scss';
+@use '../blocks/header/__burger-btn/header__burger-btn.scss';
+@use '../blocks/header/__burger-btn/_theme/header__burger-btn_theme_dark.scss';
+@use '../blocks/header/__burger-btn/_close/header__burger-btn_close.scss';
+
+@use '../blocks/main-content/main-content.scss';
+
+@use '../blocks/intro/intro.scss';
+@use '../blocks/intro/__bicycle-name/intro__bicycle-name.scss';
+@use '../blocks/intro/__bicycle-present/intro__bicycle-present.scss';
+@use '../blocks/intro/__button/intro__button.scss';
+@use '../blocks/intro/__paragraph/intro__paragraph.scss';
+@use '../blocks/intro/__right/intro__right.scss';
+@use '../blocks/intro/__title/intro__title.scss';
+@use '../blocks/intro/__line/intro__line.scss';
+@use '../blocks/intro/__line/_theme/intro-line_theme_dark.scss';
+
+@use '../blocks/card/card.scss';
+@use '../blocks/card/_position/card_position_intro.scss';
+@use '../blocks/card/_position/card_position_bycicles.scss';
+@use '../blocks/card/__image/card__image.scss';
+@use '../blocks/card/__image/_position/card__image_position_bicycles.scss';
+@use '../blocks/card/__name/card__name.scss';
+@use '../blocks/card/__link/card__link.scss';
+
+@use '../blocks/quote/quote.scss';
+@use '../blocks/quote/__author/quote__author.scss';
+@use '../blocks/quote/__img/quote__img.scss';
+@use '../blocks/quote/__job/quote__job.scss';
+@use '../blocks/quote/__job/_theme/quote__job_theme_dark.scss';
+@use '../blocks/quote/__quote/quote__quote.scss';
+
+@use '../blocks/slider/slider.scss';
+@use '../blocks/slider/__content/slider__content.scss';
+@use '../blocks/slider/__content/_move/slider__content_move_left.scss';
+@use '../blocks/slider/__content/_move/slider__content_move_right.scss';
+@use '../blocks/slider/__content/_theme/slider__content_theme_dark.scss';
+
+@use '../blocks/types/types.scss';
+@use '../blocks/types/__btn/types__btn.scss';
+@use '../blocks/types/__btn/_theme/types__btn_theme_dark.scss';
+@use '../blocks/types/__btn/_position/types__btn_position_left.scss';
+@use '../blocks/types/__btn/_position/types__btn_position_right.scss';
+@use '../blocks/types/__paragraph/types__paragraph.scss';
+@use '../blocks/types/__pic-type/types__pic-type.scss';
+@use '../blocks/types/__pic/types__pic.scss';
+@use '../blocks/types/__pic/_position/types__pic_position_left.scss';
+@use '../blocks/types/__pic/_position/types__pic_position_right.scss';
+@use '../blocks/types/__title/types__title.scss';
+@use '../blocks/types/__arrow/types__arrow.scss';
+
+@use '../blocks/bicycles/bicycles.scss';
+@use '../blocks/bicycles/__cards/bicycles__cards.scss';
+@use '../blocks/bicycles/__links/bicycles__links.scss';
+@use '../blocks/bicycles/__link/bicycles__link.scss';
+@use '../blocks/bicycles/__link/_active/bicycles__link_active.scss';
+@use '../blocks/bicycles/__link/_theme/bicycles__link_theme_dark.scss';
+@use '../blocks/bicycles/__title/bicycles__title.scss';
+@use '../blocks/bicycles/__slide-indicator/bicycles__slide-indicator.scss';
+@use '../blocks/bicycles/__slide-indicator-element/bicycles__slide-indicator-element.scss';
+@use '../blocks/bicycles/__slide-indicator-element/_active/bicycles__slide-indicator-element_active.scss';
+@use '../blocks/bicycles/__selector/bicycles__selector.scss';
+@use '../blocks/bicycles/__selector/_theme/bicycles__selector_theme_dark.scss';
+@use '../blocks/bicycles/__select-item/bicycles__select-item.scss';
+@use '../blocks/bicycles/__select-item/_theme/bicycles__select-item_theme_dark.scss';
+
+@use '../blocks/trainings/trainings.scss';
+@use '../blocks/trainings/__img/trainings__img.scss';
+@use '../blocks/trainings/__link/trainings__link.scss';
+@use '../blocks/trainings/__link/_theme/trainings__link_theme_dark.scss';
+@use '../blocks/trainings/__links/trainings__links.scss';
+@use '../blocks/trainings/__paragraph/trainings__paragraph.scss';
+@use '../blocks/trainings/__title/trainings__title.scss';
+
+@use '../blocks/footer/footer.scss';
+@use '../blocks/footer/_theme/footer_theme_dark.scss';
+@use '../blocks/footer/__bottom/footer__bottom.scss';
+@use '../blocks/footer/__top/footer__top.scss';
+@use '../blocks/footer/__copyright/footer__copyright.scss';
+@use '../blocks/footer/__copyright/_theme/footer__copyright_theme_dark.scss';
+@use '../blocks/footer/__title/footer__title.scss';
+@use '../blocks/footer/__gear/footer__gear.scss';
+@use '../blocks/footer/__gear/_theme/footer__gear_theme_dark.scss';
+
+@use '../blocks/switcher/switcher.scss';
+@use '../blocks/switcher/__btn/switcher__btn.scss';
+@use '../blocks/switcher/__btn/_theme/switcher__btn_theme_dark.scss';
+@use '../blocks/switcher/__icon-moon/switcher__icon-moon.scss';
+@use '../blocks/switcher/__icon-moon/_theme/switcher__icon-moon_theme_dark.scss';
+@use '../blocks/switcher/__icon-sun/switcher__icon-sun.scss';
+@use '../blocks/switcher/__icon-sun/_theme/switcher__icon-sun_theme_dark.scss';
+@use '../blocks/switcher/_position/switcher_position_footer.scss';
+@use '../blocks/switcher/_position/switcher_position_header.scss';
+
+@use '../blocks/form-description/form-description.scss';
+@use '../blocks/form-description/__btn/form-description__btn.scss';
+@use '../blocks/form-description/__btn/_theme/form-description__btn_theme_dark.scss';
+@use '../blocks/form-description/__btn/_visible/form-description__btn_visible.scss';
+@use '../blocks/form-description/__input-email/form-description__input-email.scss';
+@use '../blocks/form-description/__input-email/_theme/form-description__input-email_theme_dark.scss';
+
+@use '../blocks/mobile-popup/mobile-popup.scss';
+@use '../blocks/mobile-popup/_theme/mobile-popup_theme_dark.scss';
+@use '../blocks/mobile-popup/_opened/mobile-popup_opened.scss';
+@use '../blocks/mobile-popup/__menu/mobile-popup__menu.scss';
+@use '../blocks/mobile-popup/__link/mobile-popup__link.scss';
+@use '../blocks/mobile-popup/__link/_theme/mobile-popup__link_theme_dark.scss';
+
+@use '../blocks/dark-green-back/dark-green-back.scss';
+
+@use '../blocks/anchor/anchor.scss';
+
+@use '../blocks/mixins/set-font';
+@use '../blocks/mixins/set-standart-transition';
+@use '../blocks/mixins/set-transition-color-opacity';
+@use '../blocks/variables/variables.scss';

@@ -1,0 +1,19 @@
+@use '../../mixins/set-font' as *;
+@use '../../variables/variables' as *;
+
+.card__name{
+  margin: 0;
+  @include set-font(600, 18px, 1.22);
+
+  @media all and (max-width: 600px) {
+    width: 90%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    margin-bottom: 16px;
+    grid-area: main;
+    align-self: end;
+    text-align: center;
+    color: $baseFontColor;
+  }
+}

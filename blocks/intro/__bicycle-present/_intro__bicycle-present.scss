@@ -1,0 +1,11 @@
+.intro__bicycle-present{
+  margin-bottom: 45.65%;
+  grid-area: model;
+  display: flex;
+  gap:30px;
+  align-items: center;
+
+  @media all and (max-width: 785px) {
+    display: none;
+  }
+}

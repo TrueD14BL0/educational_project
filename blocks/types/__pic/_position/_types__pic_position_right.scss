@@ -1,0 +1,8 @@
+.types__pic_position_right{
+  grid-area: right;
+  background-image: url('../images/forest.jpg');
+
+  @media all and (max-width: 600px) {
+    display: none;
+  }
+}

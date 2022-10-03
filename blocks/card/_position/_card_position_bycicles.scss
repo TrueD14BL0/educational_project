@@ -1,0 +1,19 @@
+@use '../../mixins/set-standart-transition' as *;
+@use '../../variables/variables' as *;
+
+.card_position_bycicles{
+  width: 30%;
+
+  @media all and (max-width: 600px) {
+    min-width: 100%;
+    display: grid;
+    grid-template-areas: "main";
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    justify-items: center;
+    box-sizing: border-box;
+    border-radius: $standartRadius;
+    background-color: $baseBack;
+    @include set-standart-transition(transform);
+  }
+}

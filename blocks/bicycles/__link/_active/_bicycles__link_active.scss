@@ -1,0 +1,11 @@
+@use '../../../variables/variables' as *;
+
+.bicycles__link_active{
+  font-weight: 600;
+  color: $baseFontColor;
+  opacity: 1;
+
+  &:hover{
+    opacity: .75;
+  }
+}

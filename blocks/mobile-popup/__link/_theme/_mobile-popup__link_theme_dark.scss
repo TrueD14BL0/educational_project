@@ -1,0 +1,9 @@
+@use '../../../variables/variables' as *;
+
+.mobile-popup__link_theme_dark{
+  color: $white;
+
+  &:hover{
+    opacity: .65;
+  }
+}

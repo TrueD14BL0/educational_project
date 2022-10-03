@@ -1,0 +1,8 @@
+@use '../../variables/variables' as *;
+
+.slider__content{
+  position: relative;
+  grid-area: main;
+  background-color: $baseBack;
+  transition: transform .5s $animationType, scale .5s $animationType, background-color .5s $animationType;
+}

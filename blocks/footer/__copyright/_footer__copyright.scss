@@ -1,0 +1,10 @@
+@use '../../mixins/set-font' as *;
+@use '../../mixins/set-standart-transition' as *;
+
+.footer__copyright{
+  margin: 0;
+  padding: 0;
+  @include set-font(600, 14px, 1.4);
+  color: #cfcfcf;
+  @include set-standart-transition(color);
+}

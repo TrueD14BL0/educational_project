@@ -1,0 +1,14 @@
+@use '../../mixins/set-standart-transition' as *;
+
+.switcher__icon-moon{
+  font-family: 'Glyphter';
+  font-size: 26px;
+  line-height: 28px;
+  box-sizing: border-box;
+  color: #cfcfcf;
+  @include set-standart-transition(color);
+
+  &:before{
+    content:'\0043';
+  }
+}

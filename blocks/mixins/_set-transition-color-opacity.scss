@@ -1,0 +1,5 @@
+@use '../variables/variables' as *;
+
+@mixin set-transition-color-opacity(){
+  transition: color $animationTime $animationType, opacity $animationTime $animationType;
+}

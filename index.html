@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="D14BL0">
+  <title>Велосипеды Инк</title>
+  <link rel="stylesheet" type="text/css" href="./pages/index.css">
+</head>
+<body class="page">
+  <div class="page__content">
+    <header class="header">
+      <button type="button" class="header__burger-btn" aria-label="Открыть меню"></button>
+      <div class="mobile-popup">
+        <nav>
+          <ul class="mobile-popup__menu">
+            <li><a href="#types" class="mobile-popup__link">Покрытия и градиенты</a></li>
+            <li><a href="#bicycles" class="mobile-popup__link">Велосипеды</a></li>
+            <li><a href="#trainings" class="mobile-popup__link">Тренировки</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main class="main-content">
+      <section class="intro">
+        <h1 class="intro__title section-title">Шоссе, ТТ и&nbsp;Грэвел</h1>
+        <p class="intro__paragraph section-paragraph">Триатлонные старты, горные серпантины или грейвел заезды по живописным маршрутам –
+          нужно только определиться с выбором велосипеда и отправиться в путь.</p>
+        <a href="#types" class="intro__button">Подробнее</a>
+        <div class="intro__bicycle-present">
+          <p class="intro__bicycle-name">Cannondale Systemsix</p>
+          <div class="intro__line"></div>
+        </div>
+        <div class="intro__right">
+          <div class="card card_position_intro">
+            <img class="card__image" alt="Велосипед модель Cannondale Systemsix Himod" src="./images/cannondale_systemsix_himod.jpg">
+          </div>
+        </div>
+      </section>
+      <section class="quote" aria-label="Секция цитат">
+        <img class="quote__img" src="./images/quote_img.jpg" alt="Одинокий велосипедист двигающийся к деревушке, стоящей у подножия гор.">
+        <blockquote class="quote__quote">«Катайся много или мало, долго или коротко, как хочешь - но катайся»</blockquote>
+        <p class="quote__author">Эдди Меркс</p>
+        <p class="quote__job">Велогонщик</p>
+      </section>
+      <section class="slider" aria-label="Секция слайдера"></section>
+      <section class="trainings">
+        <div id="trainings" class="anchor"></div>
+        <h2  class="trainings__title section-title">Тренировки</h2>
+        <p class="trainings__paragraph section-paragraph">Чтобы найти маршрут для тренировки можно воспользоваться сервисом Komoot,
+          а записать эти тренировки поможет приложение Strava, а также это приложение
+          позволит построить тренировочный план.</p>
+        <ul class="trainings__links">
+          <li>
+            <a class="trainings__link" href="https://www.strava.com" target="_blank">Strava</a>
+          </li>
+          <li>
+            <a class="trainings__link" href="https://www.komoot.com" target="_blank">Komoot</a>
+          </li>
+        </ul>
+        <div class="trainings__img"></div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__top">
+        <h2 class="footer__title">Подпишитесь на рассылку —</h2>
+        <form class="form-description">
+          <input type="email" placeholder="Ваш e-mail" class="form-description__input-email">
+          <button class="form-description__btn" type="button">ok</button>
+        </form>
+      </div>
+      <div class="footer__bottom">
+        <p class="footer__copyright">&copy; Road Club 2021</p>
+        <div class="footer__gear"></div>
+      </div>
+    </footer>
+  </div>
+  <template id="switcher">
+    <div class="switcher">
+      <div class="switcher__icon-sun"></div>
+      <div class="switcher__btn"></div>
+      <div class="switcher__icon-moon"></div>
+    </div>
+  </template>
+  <template id="stack">
+    <div class="slider__content">
+      <section class="types">
+        <div id="types" class="anchor"></div>
+        <h2 class="types__title section-title"></h2>
+        <p class="types__paragraph section-paragraph"></p>
+        <div class="types__pic types__pic_position_left"></div>
+        <div class="types__pic types__pic_position_right"></div>
+        <div class="types__pic-type"></div>
+        <button class="types__btn types__btn_position_left" type="button">
+          <svg class="types__arrow" viewBox="0 0 10 18" xmlns="http://www.w3.org/2000/svg">
+            <path d="M9 1L2 9L9 17"/>
+          </svg>
+        </button>
+        <button class="types__btn types__btn_position_right" type="button">
+          <svg class="types__arrow" viewBox="0 0 10 18" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1 17L8 9L1 0.999999"/>
+          </svg>
+        </button>
+      </section>
+      <div>
+        <section class="bicycles">
+          <div id="bicycles" class="anchor"></div>
+          <h2 class="bicycles__title section-title">Велосипеды</h2>
+          <select class="bicycles__selector">
+            <option class="bicycles__select-item">Шоссе</option>
+            <option class="bicycles__select-item">Грэвел</option>
+            <option class="bicycles__select-item">TT</option>
+          </select>
+          <ul class="bicycles__links">
+            <li class="bicycles__link">Шоссе</li>
+            <li class="bicycles__link">Грэвел</li>
+            <li class="bicycles__link">TT</li>
+          </ul>
+          <ul class="bicycles__cards"></ul>
+          <div class="bicycles__slide-indicator">
+            <button class="bicycles__slide-indicator-element" type="button" aria-label="Переключить слайд"></button>
+            <button class="bicycles__slide-indicator-element" type="button" aria-label="Переключить слайд"></button>
+            <button class="bicycles__slide-indicator-element" type="button" aria-label="Переключить слайд"></button>
+          </div>
+        </section>
+      </div>
+    </div>
+    <li class="card card_position_bycicles">
+      <a class="card__link" href="#" target="_blank">
+        <img class="card__image card__image_position_bicycles" alt="" src="">
+      </a>
+      <h3 class="card__name"></h3>
+    </li>
+  </template>
+  <script src="./vendor/initial_arr.js"></script>
+  <script src="./pages/index.js"></script>
+</body>
+</html>

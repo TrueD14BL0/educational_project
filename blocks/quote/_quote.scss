@@ -1,0 +1,41 @@
+.quote{
+  padding: 120px 120px 60px;
+  display: grid;
+  grid-template-areas:
+    "img quote"
+    "img ."
+    "img author"
+    "img job";
+  grid-template-columns: 54% 39%;
+  grid-template-rows: max-content 1fr max-content max-content;
+  row-gap: 6px;
+  column-gap: 80px;
+
+  @media all and (max-width: 991px) {
+    padding: 60px 18px 40px;
+    column-gap: 40px;
+  }
+
+  @media all and (max-width: 600px) {
+    position: relative;
+    grid-template-areas:
+    "img"
+    "quote"
+    "author"
+    "job";
+    grid-template-columns: 100%;
+    row-gap: 40px;
+  }
+
+  &::before{
+    @media all and (max-width: 600px) {
+      content: '';
+      position: absolute;
+      width: calc(100% - 36px);;
+      height: 1px;
+      top:40px;
+      left: 18px;
+      background-color:  #e3e3e3;
+    }
+  }
+}

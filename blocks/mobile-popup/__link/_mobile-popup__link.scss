@@ -1,0 +1,13 @@
+@use '../../mixins/set-transition-color-opacity' as *;
+@use '../../variables/variables' as *;
+
+.mobile-popup__link{
+  color: $baseFontColor;
+  text-decoration: none;
+  @include set-transition-color-opacity();
+
+  &:hover{
+    cursor: pointer;
+    opacity: .75;
+  }
+}

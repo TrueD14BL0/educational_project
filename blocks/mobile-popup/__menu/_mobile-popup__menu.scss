@@ -1,0 +1,17 @@
+@use '../../mixins/set-font' as *;
+
+.mobile-popup__menu{
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 34px;
+  list-style: none;
+  @include set-font(500, 14px, 1.29);
+
+  @media all and (max-width: 600px) {
+    flex-direction: column;
+    gap: 32px;
+    align-items: center;
+    font-size: 18px;
+  }
+}

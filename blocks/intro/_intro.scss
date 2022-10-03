@@ -1,0 +1,27 @@
+.intro{
+  display: grid;
+  padding: 20px 0 0 120px;
+  grid-template-areas:
+    "title right"
+    "descr right"
+    "button right"
+    "model right";
+  grid-template-columns: minmax(min-content, 460px) 1fr;
+  gap: 50px;
+  box-sizing: border-box;
+
+  @media all and (max-width: 991px) {
+    padding: 40px 18px;
+    column-gap: 40px;
+  }
+
+  @media all and (max-width: 600px) {
+    grid-template-areas:
+    "title"
+    "right"
+    "descr"
+    "button";
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+}

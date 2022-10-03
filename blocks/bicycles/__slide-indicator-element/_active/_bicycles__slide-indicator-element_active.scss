@@ -1,0 +1,5 @@
+@use '../../../variables/variables' as *;
+
+.bicycles__slide-indicator-element_active{
+  background-color: $baseFontColor;
+}

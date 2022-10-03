@@ -1,0 +1,13 @@
+@use '../mixins/set-font' as *;
+
+.section-title{
+  margin: 0;
+  max-width: 460px;
+  @include set-font(700, 55px, 1.09);
+  letter-spacing: -.5px;
+
+  @media all and (max-width: 600px) {
+    font-size: 32px;
+    line-height: 1.25;
+  }
+}

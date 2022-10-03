@@ -1,0 +1,30 @@
+@use '../../variables/variables' as *;
+
+.bicycles__cards{
+  margin: 0;
+  padding: 0;
+  max-width: calc(100vw - 240px);
+  grid-area: bic;
+  box-sizing: border-box;
+  display: flex;
+  gap: 30px;
+  justify-content: space-between;
+  align-items: baseline;
+  list-style-type: none;
+
+  @media all and (max-width: 991px) {
+    max-width: calc(100vw - 36px);
+    padding-right: 18px;
+  }
+
+  @media all and (max-width: 600px) {
+    gap:18px;
+    overflow-x: hidden;
+    border-radius: $standartRadius;
+    box-shadow: 0px 20px 140px rgb(0 0 0 / 6%);
+  }
+}
+
+
+
+

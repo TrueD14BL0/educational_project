@@ -1,0 +1,5 @@
+@keyframes dark-green-back {
+  @for $i from 0 through 100 {
+    #{$i * 1%} {background: linear-gradient(to right, #319E75 #{$i * 1%}, #24b47e #{$i * 1%});}
+  }
+}

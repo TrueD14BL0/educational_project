@@ -1,0 +1,10 @@
+.types__arrow{
+  width:7px;
+  height: 16px;
+  fill: none;
+
+  @media all and (max-width: 600px) {
+    width: 4.5px;
+    height: 10px;
+  }
+}

@@ -1,0 +1,42 @@
+@use '../../mixins/set-font' as *;
+@use '../../mixins/set-transition-color-opacity' as *;
+@use '../../mixins/set-standart-transition' as *;
+
+.form-description__input-email{
+  grid-area: main;
+  min-width: 100%;
+  padding: 11px 60px 11px 20px;
+  background-color: transparent;
+  box-sizing: border-box;
+  @include set-font(500, 13px, 2.15);
+  border: 1px solid rgba(199, 199, 199, 0.5);
+  border-radius: 4px;
+  cursor: pointer;
+  @include set-standart-transition(border);
+
+  &::-webkit-input-placeholder {
+    opacity: .7;
+    @include set-font(500, 13px, 2.15);
+    @include set-transition-color-opacity();
+  }
+
+  &::-moz-placeholder {
+    opacity: .7;
+    @include set-font(500, 13px, 2.15);
+    @include set-transition-color-opacity();
+  }
+
+  &::-ms-input-placeholder {
+    opacity: .7;
+    @include set-font(500, 13px, 2.15);
+    @include set-transition-color-opacity();
+  }
+
+  &::placeholder {
+    opacity: .7;
+    @include set-font(500, 13px, 2.15);
+    @include set-transition-color-opacity();
+  }
+}
+
+

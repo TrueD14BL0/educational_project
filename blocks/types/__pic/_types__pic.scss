@@ -1,0 +1,12 @@
+.types__pic{
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 400px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+
+  @media all and (max-width: 600px) {
+    min-height: 175px;
+  }
+}

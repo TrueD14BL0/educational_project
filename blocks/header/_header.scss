@@ -1,0 +1,21 @@
+@use '../mixins/set-standart-transition' as *;
+@use '../variables/variables' as *;
+
+.header{
+  position:fixed;
+  width: 100%;
+  padding: 28px 120px;
+  display: flex;
+  justify-content: end;
+  top: 0;
+  left: 0;
+  box-sizing: border-box;
+  flex: 0 0 auto;
+  z-index: 10;
+  background-color: $baseBack;
+  @include set-standart-transition(background-color);
+
+  @media all and (max-width: 700px) {
+    padding: 26px 18px;
+  }
+}

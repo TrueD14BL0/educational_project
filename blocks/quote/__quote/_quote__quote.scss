@@ -1,0 +1,12 @@
+@use '../../mixins/set-font' as *;
+
+.quote__quote{
+  margin: 0;
+  grid-area: quote;
+  @include set-font(600, 34px, 1.29);
+  letter-spacing: -.5px;
+
+  @media all and (max-width: 600px) {
+    @include set-font(500, 23px, 1.26);
+  }
+}

@@ -1,0 +1,6 @@
+.slider{
+  display: grid;
+  grid-template-areas: "main";
+  grid-template-columns: 100%;
+  overflow-x: hidden;
+}

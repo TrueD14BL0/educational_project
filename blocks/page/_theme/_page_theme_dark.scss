@@ -1,0 +1,6 @@
+@use '../../variables/variables' as *;
+
+.page_theme_dark{
+  background-color: $darkThemeBack;
+  color: $white;
+}

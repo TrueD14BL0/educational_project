@@ -1,0 +1,11 @@
+@use '../variables/variables' as *;
+
+.card{
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  justify-content: center;
+  align-items: start;
+  border-radius: $standartRadius;
+}

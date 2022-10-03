@@ -1,0 +1,8 @@
+.types__paragraph{
+  margin: 0 0 30px;
+  grid-area: descr;
+
+  @media all and (max-width: 600px) {
+    margin: 0;
+  }
+}
